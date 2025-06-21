@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ohene Desmond Ofosu | Portfolio</title>
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #FFF2E0;
+  color: #333;
+}
+
+header {
+  background-color: #333;
+  padding: 15px;
+  color: white;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+section {
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #444;
+}
+
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.project {
+  background-color: #FFE3A9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, textarea {
+  padding: 10px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  width: 100%;
+}
+
+button {
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #222;
+  color: white;
+  margin-top: 40px;
+}
+
+/* Smooth scroll for navigation */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Add hover effect to nav links */
+nav ul li a:hover {
+  color: #ff9900;
+  transition: color 0.3s;
+}
+
+/* Project card hover effect */
+.project {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Button hover effect */
+button:hover {
+  background-color: #555;
+  transition: background-color 0.3s;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  .project-list {
+    flex-direction: column;
+  }
+
+  section {
+    padding: 20px 10px;
+  }
+
+  input, textarea {
+    font-size: 16px;
+  }
+
+  h1, h2, h3 {
+    font-size: 1.5em;
+  }
+}
+  </style>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <h1>Ohene Desmond Ofosu</h1>
+      <img src="./ProfileImage.jpg" height="200px" class="icon"/>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I'm a passionate and growing web developer with a focus on clean, responsive designs. I specialize in building simple websites using HTML and CSS. I'm currently learning more every day and ready to bring creative ideas to life. Let's build something amazing together!</p>
+  </section>
+
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div class="project-list">
+      <div class="project">
+        <h3>Project 1: Personal Portfolio</h3>
+        <p>A simple personal portfolio built with HTML and CSS. It includes an About section, Projects, and a Contact form. It’s fully responsive and showcases my journey into web development..</p>
+        <a href="#">View Project</a>
+      </div>
+      <div class="project">
+        <h3>Project 2: Birthday Invitation Project.</h3>
+        <p>Creative birthday invitation page designed using only HTML and CSS. It features event details, organized lists, and styled headings — perfect for sending digital invites to friends and family.</p>
+        <a href="./birthdayImage.png">View Project</a>
+        
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2><a href="./contact.html">Contact Me</a></h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Ohene Desmond Ofosu. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
